@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+
+
+<h1>
+    Pizza Ordering Form
+</h1>
+
+
+<h2>
+    Contact Information
+</h2>
+
+<form>
+    <label for="inName">Name: </label>
+    <input type="text" name="inName" id="inName" required><br>
+    <label for="inPhone">Phone: </label>
+    <input type="tel" name="inPhone" id="inPhone" required><br>
+    <label for="inEmail">Email: </label>
+    <input type="email" name="inEmail" id="inEmail" required>
+</form>
+
+<h2>
+    Select Pizza Size
+</h2>
+
+<form>
+    <label for="pizzaSize">Pizza Size: </label>
+    <select name="pizzaSize" id="pizzaSize">
+        <option>--Select Size--</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XLarge</option>
+    </select>
+</form>
+
+<h2>
+    Select Sauce
+</h2>
+
+<form>
+    <input type="radio" name="favSauce"><label>Marinara</label><br>
+    <input type="radio" name="favSauce"><label>Ranch</label><br>
+    <input type="radio" name="favSauce"><label>No Sauce</label><br>
+</form>
+
+<h2>
+    Select Toppings
+</h2>
+
+<form>
+    <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
+    <label for="topping1">Pepperoni</label>
+    <input type="checkbox" id="topping2" name="topping2" value="Bacon">
+    <label for="topping2">Bacon</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Mushrooms">
+    <label for="topping3">Mushrooms</label>
+    <input type="checkbox" id="topping4" name="topping4" value="Sausage">
+    <label for="topping4">Sausage</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Onions">
+    <label for="topping5">Onions</label>
+    <input type="checkbox" id="topping6" name="topping6" value="Pineapple">
+    <label for="topping6">Pineapple</label>
+</form>
+
+<h2>
+    Additional Instructions
+</h2>
+
+<form>
+    <textarea name="comments">Add instructions</textarea>
+</form>
+
+<form>
+    <input type="submit" value="Submit!">
+</form>
+
+
+<table>
+    <caption>
+        List of My Favorite Games
+    </caption>
+    <thead>
+        <tr>
+            <th>
+                Developer
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Year
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2">
+                Capcom
+            </th>
+            <th>
+                Monster Hunter: World
+            </th>
+            <th>
+                2018
+            </th>
+        </tr>
+        <tr>
+
+            <th>
+                Monster Hunter: Wilds
+            </th>
+            <th>
+                2025
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Starbreeze
+            </th>
+            <th>
+                Payday 2
+            </th>
+            <th>
+                2013
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Ryu Ga Gotoku Studio
+            </th>
+            <th>
+                Yakuza 0
+            </th>
+            <th>
+                2015
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                Count: 4
+            </th>
+        </tr>
+    </tbody>
+</table>
+
+</html>
