@@ -1,0 +1,66 @@
+h1{
+    background-color: paleturquoise;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    background-color: paleturquoise;
+    color: black;
+}
+h3{
+    background-color: paleturquoise;
+    color: black;
+}
+p{
+    background-color: paleturquoise;
+    color: black;
+}
+p.blue{
+    background-color: blue;
+    color: black;
+}
+ol{
+    background-color: paleturquoise;
+    color: black;
+}
+a{
+    color: rgb(4, 4, 176);
+}
+#paragraph2{
+    background-color: white;
+    color: black;
+    border-color: green;
+    border-style: solid;
+    border-width: 4px;
+    margin: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+body{
+    background: paleturquoise;
+}
+th{
+    color: black;
+    background-color: rgb(193, 188, 188);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+td{
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 7px;
+    border-collapse: collapse;
+}
+table{
+    border-collapse: collapse;
+}
+p a{
+    color: rgb(134, 15, 15);
+}
