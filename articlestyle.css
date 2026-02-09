@@ -1,0 +1,95 @@
+            div{
+                margin-left: 15%;
+                float: left;
+                padding: 15px;
+                background-color: white;
+                color: black;
+            }
+            
+            article{
+                float: left;
+                padding: 10px;
+                display: inline-grid;
+                grid-template-columns: 300px;
+            }
+
+            main h1{
+                text-align: center;
+                margin-left: 15%;
+                font-size: 45px;
+                background-color: white;
+                color: black;
+                margin-top: 12%;
+            }
+            body{
+                background-color: white;
+            }
+
+            #jumpMenu{
+                float: left;
+                position: fixed;
+                background-color: rgb(199, 190, 18);
+                overflow-x: hidden;
+                height: 100%;
+                left: 0;
+                z-index: 1;
+                width: 15%;
+                top: 0;   
+            }
+
+            #jumpMenu a{
+                text-align: center;
+                display: block;
+                color: rgb(5, 5, 190);
+                font-size: large;
+                padding-top: 9%;
+            }
+
+            #jumpMenu h2{
+                color: black;
+                text-align: center;
+                font-size: x-large;
+            }
+
+            header{
+                position: fixed;
+                width: 85%;
+                right: 0;
+                top: 0;
+                background-color: rgb(240, 4, 4)
+            }
+
+            header p{
+                background-color: rgb(240, 4, 4);
+                text-align: center;
+                font-size: x-large;
+                color: black;
+            }
+
+            nav{
+                background-color: black;
+            }
+
+            nav button{
+                background-color: rgb(11, 11, 235);
+                color: white;
+                width: 20%;
+                margin-left: 4%;
+                font-size: large;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+
+            #thanks{
+                background-color: paleturquoise;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                color: black;
+                font-size: x-large;
+                padding: 15px;
+                
+            }
