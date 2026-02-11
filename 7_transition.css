@@ -1,0 +1,135 @@
+header p{
+    text-align: center;
+    background-color: red;
+    color: black;
+    font-size: xx-large; 
+    
+}
+
+header{
+    position: fixed;
+    width: 85%;
+    right: 0;
+    top: 0;
+    background-color: red;
+    z-index: 0;
+}
+
+h1{
+    margin-top: 175px;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: white;
+    margin-left: 15%;
+}
+
+article{
+    display: inline-grid;
+    grid-template-columns: 300px;
+    color: lightgray;
+    transition-property: font-size;
+    transition-duration: 2s;
+    margin-left: 10px;
+}
+
+article:hover{
+    font-size: 150%;
+    color: black;
+}
+
+article p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+article p a{
+    color: blue;
+
+}
+
+article p a::after{
+    content:url(https://nick-bonilla-0915.github.io/html_arrow.png);
+}
+
+#menuItems{
+    float: left;
+    position: fixed;
+    background-color: black;
+    overflow-x: hidden;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+    width: 15%;
+    top: 0;   
+    margin: 0px;
+}
+
+nav button{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: large;
+    padding: 10px;
+}
+
+nav button:hover{
+    background-color: rgb(198, 198, 25);
+}
+
+button + ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#recentArticles:hover + #jumpMenu{
+    display: block;
+}
+
+#jumpMenu:hover{
+    display: block;
+}
+
+li:hover{
+    background-color: blue;
+    display: block;
+}
+
+li a:hover{
+    color: black;
+}
+
+ul li{
+    color: rgb(12, 12, 158);
+    display: block;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(198, 198, 25);
+}
+
+#thanks{
+    background-color: rgb(112, 183, 237);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    color: black;
+    font-size: x-large;
+    padding: 15px;
+}
+
+#thanks a{
+    color: blue;
+}
+
+footer{
+    margin-left: 15%;
+    text-align: center;
+}
