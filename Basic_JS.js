@@ -17,6 +17,7 @@ function tickDown(){
 let loopOut = "";
 
 function runForLoop(){
+    loopOut = "";
     for(let i = 0; i < counter; i++)
     {
         loopOut += i + " ";
