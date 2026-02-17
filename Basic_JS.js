@@ -31,11 +31,13 @@ function showOddNumbers(){
     oddLoopOut = "";
     for(let i = 0; i <= counter; i++)
     {
-        if(i % 2 == 1)
+        if((i % 2) == 1)
         {
             oddLoopOut += i + " ";
         }
     }
+
+    updateOddNumberResult();
 }
 
 function updateForLoopResult(){
