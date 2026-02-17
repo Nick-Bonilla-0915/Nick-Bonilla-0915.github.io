@@ -13,3 +13,18 @@ function tickDown(){
     counter--;
     updateCounter();
 }
+
+let loopOut = "";
+
+function runForLoop(){
+    for(let i = 0; i < counter; i++)
+    {
+        loopOut += i + " ";
+    }
+
+    updateForLoopResult();
+}
+
+function updateForLoopResult(){
+    document.getElementById("forLoopResult").innerHTML = loopOut;
+}
