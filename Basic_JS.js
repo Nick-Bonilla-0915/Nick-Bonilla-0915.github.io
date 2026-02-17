@@ -57,7 +57,7 @@ function addMultiplesToArray(){
         if((i % 5) == 0)
         {
             fivesArr[index] = i;
-            counter++;
+            index++;
         }
     }
 
