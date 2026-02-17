@@ -47,3 +47,19 @@ function updateForLoopResult(){
 function updateOddNumberResult(){
     document.getElementById("oddNumberResult").innerHTML = oddLoopOut;
 }
+
+const fivesArr = [];
+
+function addMultiplesToArray(){
+    let index = 0;
+    for(let i = counter; i > 0; i--)
+    {
+        if((i % 5) == 0)
+        {
+            fivesArr[index] = i;
+            counter++;
+        }
+    }
+
+    console.log(fivesArr);
+}
