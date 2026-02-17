@@ -15,10 +15,11 @@ function tickDown(){
 }
 
 let loopOut = "";
+let oddLoopOut = "";
 
 function runForLoop(){
     loopOut = "";
-    for(let i = 0; i < counter; i++)
+    for(let i = 0; i <= counter; i++)
     {
         loopOut += i + " ";
     }
@@ -26,6 +27,21 @@ function runForLoop(){
     updateForLoopResult();
 }
 
+function showOddNumbers(){
+    oddLoopOut = "";
+    for(let i = 0; i <= counter; i++)
+    {
+        if(i % 2 == 1)
+        {
+            oddLoopOut += i + " ";
+        }
+    }
+}
+
 function updateForLoopResult(){
     document.getElementById("forLoopResult").innerHTML = loopOut;
+}
+
+function updateOddNumberResult(){
+    document.getElementById("oddNumberResult").innerHTML = oddLoopOut;
 }
