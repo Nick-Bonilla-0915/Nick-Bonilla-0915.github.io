@@ -63,3 +63,46 @@ function addMultiplesToArray(){
 
     console.log(fivesArr);
 }
+
+function carObject(type, MPG, color){
+    this.cType = type;
+    this.cMPG = MPG;
+    this.cColor = color;
+
+}
+
+function printCarObject(){
+    console.log("cType: '" + document.getElementById("carType") + "', cMPG: '" + document.getElementById("carMPG") + "', cColor: '" + document.getElementById("carColor") + "'");
+}
+
+function loadCar(a){
+    if(a == 1){
+        document.getElementById("carType").innerHTML = carObject1.cType;
+        document.getElementById("carMPG").innerHTML = carObject1.cMPG;
+        document.getElementById("carColor").innerHTML = carObject1.cColor;
+    }
+    else if(a == 2){
+        document.getElementById("carType").innerHTML = carObject2.cType;
+        document.getElementById("carMPG").innerHTML = carObject2.cMPG;
+        document.getElementById("carColor").innerHTML = carObject2.cColor;
+    }
+    else if(a == 3)
+    {
+        document.getElementById("carType").innerHTML = carObject3.ctype;
+        document.getElementById("carMPG").innerHTML = carObject3.cMPG;
+        document.getElementById("carColor").innerHTML = carObject3.cColor;
+    }
+}
+
+function changeColor(a){
+    var x = document.getElementById("styleParagraph");
+    if(a == 1){
+        x.style.color = "#FF0000";
+    }
+    else if(a == 2){
+        x.style.color = "#00FF00";
+    }
+    else if(a == 3){
+        x.style.color = "#0000FF";
+    }
+}
