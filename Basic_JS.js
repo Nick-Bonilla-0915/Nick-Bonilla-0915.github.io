@@ -72,25 +72,25 @@ function carObject(type, MPG, color){
 }
 
 function printCarObject(){
-    console.log("cType: '" + document.getElementById("carType") + "', cMPG: '" + document.getElementById("carMPG") + "', cColor: '" + document.getElementById("carColor") + "'");
+    console.log("cType: '" + document.getElementById("carType").innerText + "', cMPG: '" + document.getElementById("carMPG").innerText + "', cColor: '" + document.getElementById("carColor").innerText + "'");
 }
 
 function loadCar(a){
     if(a == 1){
-        document.getElementById("carType").innerHTML = carObject1.cType;
-        document.getElementById("carMPG").innerHTML = carObject1.cMPG;
-        document.getElementById("carColor").innerHTML = carObject1.cColor;
+        document.getElementById("carType").innerText = carObject1.cType;
+        document.getElementById("carMPG").innerText = carObject1.cMPG;
+        document.getElementById("carColor").innerText = carObject1.cColor;
     }
     else if(a == 2){
-        document.getElementById("carType").innerHTML = carObject2.cType;
-        document.getElementById("carMPG").innerHTML = carObject2.cMPG;
-        document.getElementById("carColor").innerHTML = carObject2.cColor;
+        document.getElementById("carType").innerText = carObject2.cType;
+        document.getElementById("carMPG").innerText = carObject2.cMPG;
+        document.getElementById("carColor").innerText = carObject2.cColor;
     }
     else if(a == 3)
     {
-        document.getElementById("carType").innerHTML = carObject3.ctype;
-        document.getElementById("carMPG").innerHTML = carObject3.cMPG;
-        document.getElementById("carColor").innerHTML = carObject3.cColor;
+        document.getElementById("carType").innerText = carObject3.ctype;
+        document.getElementById("carMPG").innerText = carObject3.cMPG;
+        document.getElementById("carColor").innerText = carObject3.cColor;
     }
 }
 
