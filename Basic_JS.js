@@ -67,9 +67,9 @@ function addMultiplesToArray(){
 
 function printCarObject(){
     const car = {
-        cType: document.getElementById("carType").innerText,
-        cMPG: document.getElementById("carMPG").innerText,
-        cCOlor: document.getElementById("carColor").innerText
+        cType: document.getElementById("carType"),
+        cMPG: document.getElementById("carMPG"),
+        cColor: document.getElementById("carColor")
     };
 
     console.log(car);
@@ -77,20 +77,20 @@ function printCarObject(){
 
 function loadCar(a){
     if(a == 1){
-        document.getElementById("carType").innerText = carObject1.cType;
-        document.getElementById("carMPG").innerText = carObject1.cMPG;
-        document.getElementById("carColor").innerText = carObject1.cColor;
+        document.getElementById("carType") = carObject1.cType;
+        document.getElementById("carMPG") = carObject1.cMPG;
+        document.getElementById("carColor") = carObject1.cColor;
     }
     else if(a == 2){
-        document.getElementById("carType").innerText = carObject2.cType;
-        document.getElementById("carMPG").innerText = carObject2.cMPG;
-        document.getElementById("carColor").innerText = carObject2.cColor;
+        document.getElementById("carType") = carObject2.cType;
+        document.getElementById("carMPG") = carObject2.cMPG;
+        document.getElementById("carColor") = carObject2.cColor;
     }
     else if(a == 3)
     {
-        document.getElementById("carType").innerText = carObject3.ctype;
-        document.getElementById("carMPG").innerText = carObject3.cMPG;
-        document.getElementById("carColor").innerText = carObject3.cColor;
+        document.getElementById("carType") = carObject3.ctype;
+        document.getElementById("carMPG") = carObject3.cMPG;
+        document.getElementById("carColor") = carObject3.cColor;
     }
 }
 
