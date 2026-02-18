@@ -64,15 +64,15 @@ function addMultiplesToArray(){
     console.log(fivesArr);
 }
 
-function carObject(type, MPG, color){
-    this.cType = type;
-    this.cMPG = MPG;
-    this.cColor = color;
-
-}
 
 function printCarObject(){
-    console.log("cType: '" + document.getElementById("carType").innerText + "', cMPG: '" + document.getElementById("carMPG").innerText + "', cColor: '" + document.getElementById("carColor").innerText + "'");
+    const car = {
+        cType: document.getElementById("carType").innerText,
+        cMPG: document.getElementById("carMPG").innerText,
+        cCOlor: document.getElementById("carColor").innerText
+    };
+
+    console.log(car);
 }
 
 function loadCar(a){
