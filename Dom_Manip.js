@@ -1,5 +1,4 @@
-function showFilter()
-{
+function showFilter(){
     var x = document.getElementById("filterContent");
     var y = document.getElementById("newContent");
     x.style.display = block;
