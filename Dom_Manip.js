@@ -9,10 +9,17 @@ function showAddNew(){
 }
 
 function addNewArticle(){
-
+    const newArticle = document.createElement("article");
+    const newTitle = document.getElementById("inputHeader");
+    newArticle.appendChild(newTitle);
+    const newBody = document.getElementById("inputArticle");
+    newArticle.appendChild(newBody);
+    
+    const element = document.getElementById("articleList");
+    element.appendChild(newArticle);
 }
 
 function filterArticles(){
-
+    
 }
 
