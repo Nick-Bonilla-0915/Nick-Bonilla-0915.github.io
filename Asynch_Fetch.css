@@ -24,8 +24,9 @@ h2{
     margin-left: 1%;
 }
 
-.moveSet button{
+.submitButton{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
