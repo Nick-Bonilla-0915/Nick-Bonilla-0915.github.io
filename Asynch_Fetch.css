@@ -41,8 +41,6 @@ h2{
     margin-bottom: 15px;
 }
 
-
 #pokeImg{
-    object-fit: contain;
-
+    object-fit: scale-down;
 }
