@@ -10,13 +10,14 @@
     <body>
         <section>
             <h2>Name or ID</h2>
-            <div class="findPoke">
+            <div id="findMon">
                 <input type="text" name="inName" id="inName">
                 <button onclick="findPokemon()">Find</button>
             </div>
-            <img></img>
+
+            <img id="pokeImg"></img>
             
-            <div class="moveSet">
+            <div id="moveSet">
                 <select name="move1" id="move1">
                 </select>
                 <select name="move2" id="move2">
@@ -26,9 +27,11 @@
                 <select name="move4" id="move4">
                 </select><br>
             </div>
-            <div class="submitButton">
+            
+            <div id="addMon">
                 <button onclick="addPokemon()">Add to Team</button>
             </div>
+
         </section>
 
 

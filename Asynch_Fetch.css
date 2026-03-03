@@ -14,17 +14,17 @@ h2{
     text-align: center;
 }
 
-.findPoke{
+#findMon{
     display: block;
     text-align: center;
 }
 
-.moveSet select{
+#moveSet select{
     width: 40%;
     margin-left: 5%;
 }
 
-.submitButton{
+#addMon{
     display: flex;
     justify-content: center;
     align-items: center;
