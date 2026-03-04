@@ -54,7 +54,7 @@ async function findPokemon(){
 //Function to add pokemon to team
 function addPokemon(){
     //Getting all set values
-    const teamMemberSprite = document.getElementById("pokeImg");
+    const teamMemberSprite = document.getElementById("pokeImg").src;
     const memMove1 = document.createTextNode(document.getElementById("move1").value);
     const memMove2 = document.createTextNode(document.getElementById("move2").value);
     const memMove3 = document.createTextNode(document.getElementById("move3").value);
@@ -83,7 +83,7 @@ function clearList(selectElement){
 
 //Function to fill move lists
 function fillList(selectElement, data){
-    data.moves.move.forEach(move => {
+    data.moves.forEach(move => {
         const moveOption = document.createElement('option');
         moveOption.value = move.name;
         moveOption.text = move.name;
