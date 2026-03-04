@@ -83,9 +83,10 @@ function clearList(selectElement){
 
 //Function to fill move lists
 function fillList(selectElement, data){
-    data.moves.forEach(move => {
+    data.moves.move.forEach(move => {
         const moveOption = document.createElement('option');
         moveOption.value = move.name;
+        moveOption.text = move.name;
         selectElement.add(moveOption);
     })
 }
