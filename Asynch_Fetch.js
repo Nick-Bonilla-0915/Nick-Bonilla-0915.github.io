@@ -16,13 +16,13 @@ async function findPokemon(){
 
         //Updating Pokemon sprite
         const pokeSprite = data.sprites.front_default;
-        const docID = document.getElementById("pokeImg");
-        docID.src = pokeSprite;
+        const pokeSpriteDocID = document.getElementById("pokeImg");
+        pokeSpriteDocID.src = pokeSprite;
 
         //Updating Pokemon cry
         const pokeCry = data.cries.latest;
-        docID = document.getElementById("pokeCry");
-        docID.src = pokeCry;
+        const pokeCryDocID = document.getElementById("pokeCry");
+        pokeCryDocID.src = pokeCry;
     }
     catch(error)
     {
