@@ -11,6 +11,9 @@ function findPokemon(){
         .then(data => console.log(data))
         .catch(error => console.error(error));
     
+        const pokeSprite = data.sprites.front_default;
+        const spriteShow = document.getElementById("pokeImg");
+        spriteShow.src = pokeSprite;
 }
 
 function addPokemon(){
