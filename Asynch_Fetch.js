@@ -55,10 +55,10 @@ async function findPokemon(){
 function addPokemon(){
     //Getting all set values
     const teamMemberSprite = document.getElementById("pokeImg");
-    const memMove1 = document.getElementById("move1").value;
-    const memMove2 = document.getElementById("move2").value;
-    const memMove3 = document.getElementById("move3").value;
-    const memMove4 = document.getElementById("move4").value;
+    const memMove1 = createTextNode(document.getElementById("move1").value);
+    const memMove2 = createTextNode(document.getElementById("move2").value);
+    const memMove3 = createTextNode(document.getElementById("move3").value);
+    const memMove4 = createTextNode(document.getElementById("move4").value);
     const teamBlock = document.getElementById("team");
 
     //Creating element
