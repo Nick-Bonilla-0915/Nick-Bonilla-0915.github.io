@@ -23,6 +23,7 @@ async function findPokemon(){
         const pokeCry = data.cries.latest;
         const pokeCryDocID = document.getElementById("pokeCry");
         pokeCryDocID.src = pokeCry;
+        pokeCryDocID.load();
     }
     catch(error)
     {
