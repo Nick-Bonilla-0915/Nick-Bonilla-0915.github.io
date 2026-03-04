@@ -30,37 +30,37 @@ async function findPokemon(){
         const mList1 = document.getElementById("move1");
         clearList(mList1);
         data.results.forEach(move =>{
-            const move = document.createElement('option');
-            option.value = move.name;
-            option.text = move.name;
-            mList1.add(option);
+            const moveOption = document.createElement('option');
+            moveOption.value = move.name;
+            moveOption.text = move.name;
+            mList1.add(moveOption);
         })
 
         const mList2 = document.getElementById("move2");
         clearList(mList2);
         data.results.forEach(move =>{
-            const move = document.createElement('option');
-            option.value = move.name;
-            option.text = move.name;
-            mList2.add(option);
+            const moveOption = document.createElement('option');
+            moveOption.value = move.name;
+            moveOption.text = move.name;
+            mList2.add(moveOption);
         })
 
         const mList3 = document.getElementById("move3");
         clearList(mList3);
         data.results.forEach(move =>{
-            const move = document.createElement('option');
-            option.value = move.name;
-            option.text = move.name;
-            mList3.add(option);
+            const moveOption = document.createElement('option');
+            moveOption.value = move.name;
+            moveOption.text = move.name;
+            mList3.add(moveOption);
         })
 
         const mList4 = document.getElementById("move4");
         clearList(mList4);
         data.results.forEach(move =>{
-            const move = document.createElement('option');
-            option.value = move.name;
-            option.text = move.name;
-            mList4.add(option);
+            const moveOption = document.createElement('option');
+            moveOption.value = move.name;
+            moveOption.text = move.name;
+            mList4.add(moveOption);
         })
 
     }
