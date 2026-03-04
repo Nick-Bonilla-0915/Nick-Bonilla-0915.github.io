@@ -23,6 +23,8 @@ async function findPokemon(){
         const pokeCries = data.cries.latest;
         const pokeCryDocID = document.getElementById("pokeCry");
         pokeCryDocID.src = pokeCries;
+        const criesParent = document.getElementById("cryParent");
+        criesParent.load();
 
         //Updating Pokemon Moves
         const mList1 = document.getElementById("move1");
