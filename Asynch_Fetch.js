@@ -55,6 +55,8 @@ async function findPokemon(){
 function addPokemon(){
     //Getting all set values
     const teamMemberSprite = document.getElementById("pokeImg").src;
+    const tMSprite = document.createElement('img');
+    newImage.src = teamMemberSprite;
     const memMove1 = document.createTextNode(document.getElementById("move1").value);
     const memMove2 = document.createTextNode(document.getElementById("move2").value);
     const memMove3 = document.createTextNode(document.getElementById("move3").value);
@@ -63,7 +65,7 @@ function addPokemon(){
 
     //Creating element
     const teamMember = document.createElement("section");
-    teamMember.appendChild(teamMemberSprite);
+    teamMember.appendChild(tMSprite);
     teamMember.appendChild(memMove1);
     teamMember.appendChild(memMove2);
     teamMember.appendChild(memMove3);
