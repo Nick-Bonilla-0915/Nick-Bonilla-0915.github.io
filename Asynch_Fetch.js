@@ -2,7 +2,7 @@ async function findPokemon(){
     try{
         //Taking name or ID then fetching data from api
         const pokeID = document.getElementById("inName").value.toLowerCase();
-        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeID}`);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeID}`);
 
         //Checking if fetch is successful
         if(!response.ok)
