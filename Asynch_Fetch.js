@@ -53,7 +53,24 @@ async function findPokemon(){
 
 //Function to add pokemon to team
 function addPokemon(){
-    console.log("BBBBBB");
+    //Getting all set values
+    const teamMemberSprite = document.getElementById("pokeImg");
+    const memMove1 = document.getElementById("move1").value;
+    const memMove2 = document.getElementById("move2").value;
+    const memMove3 = document.getElementById("move3").value;
+    const memMove4 = document.getElementById("move4").value;
+    const teamBlock = document.getElementById("team");
+
+    //Creating element
+    const teamMember = document.createElement("section");
+    teamMember.appendChild(teamMemberSprite);
+    teamMember.appendChild(memMove1);
+    teamMember.appendChild(memMove2);
+    teamMember.appendChild(memMove3);
+    teamMember.appendChild(memMove4);
+
+    //Appending element
+    teamBlock.appendChild(teamMember);
 }
 
 //Function to clear move lists
