@@ -62,13 +62,17 @@ function addPokemon(){
     const memMove3 = document.createTextNode(document.getElementById("move3").value);
     const memMove4 = document.createTextNode(document.getElementById("move4").value);
     const teamBlock = document.getElementById("team");
+    const spacing = document.createTextNode("    ");
 
     //Creating element
     const teamMember = document.createElement("section");
-    teamMember.appendChild(tMSprite);
+    teamMember.appendChild(tMSprite); 
     teamMember.appendChild(memMove1);
+    teamMember.appendChild(spacing);
     teamMember.appendChild(memMove2);
+    teamMember.appendChild(spacing);
     teamMember.appendChild(memMove3);
+    teamMember.appendChild(spacing);
     teamMember.appendChild(memMove4);
 
     //Appending element
