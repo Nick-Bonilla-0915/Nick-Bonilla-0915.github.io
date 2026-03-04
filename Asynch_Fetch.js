@@ -28,12 +28,41 @@ async function findPokemon(){
 
         //Updating Pokemon Moves
         const mList1 = document.getElementById("move1");
+        clearList(mList1);
+        data.results.forEach(move =>{
+            const move = document.createElement('option');
+            option.value = move.name;
+            option.text = move.name;
+            mList1.add(option);
+        })
 
         const mList2 = document.getElementById("move2");
+        clearList(mList2);
+        data.results.forEach(move =>{
+            const move = document.createElement('option');
+            option.value = move.name;
+            option.text = move.name;
+            mList2.add(option);
+        })
 
         const mList3 = document.getElementById("move3");
+        clearList(mList3);
+        data.results.forEach(move =>{
+            const move = document.createElement('option');
+            option.value = move.name;
+            option.text = move.name;
+            mList3.add(option);
+        })
 
         const mList4 = document.getElementById("move4");
+        clearList(mList4);
+        data.results.forEach(move =>{
+            const move = document.createElement('option');
+            option.value = move.name;
+            option.text = move.name;
+            mList4.add(option);
+        })
+
     }
     catch(error)
     {
@@ -44,4 +73,12 @@ async function findPokemon(){
 //Function to add pokemon to team
 function addPokemon(){
     console.log("BBBBBB");
+}
+
+//Function to clear move lists
+function clearList(selectElement){
+    var i, L=selectElement.options.length - 1;
+    for(i = L; i >=0; i--){
+        selectElement.remove(i);
+    }
 }
