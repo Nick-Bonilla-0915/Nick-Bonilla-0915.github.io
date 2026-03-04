@@ -56,7 +56,7 @@ function addPokemon(){
     //Getting all set values
     const teamMemberSprite = document.getElementById("pokeImg").src;
     const tMSprite = document.createElement('img');
-    newImage.src = teamMemberSprite;
+    tMSprite.src = teamMemberSprite;
     const memMove1 = document.createTextNode(document.getElementById("move1").value);
     const memMove2 = document.createTextNode(document.getElementById("move2").value);
     const memMove3 = document.createTextNode(document.getElementById("move3").value);
