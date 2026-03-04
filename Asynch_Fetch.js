@@ -29,39 +29,20 @@ async function findPokemon(){
         //Updating Pokemon Moves
         const mList1 = document.getElementById("move1");
         clearList(mList1);
-        data.results.forEach(move =>{
-            const moveOption = document.createElement('option');
-            moveOption.value = move.name;
-            moveOption.text = move.name;
-            mList1.add(moveOption);
-        })
+        fillList(mList1, data);
+        
 
         const mList2 = document.getElementById("move2");
         clearList(mList2);
-        data.results.forEach(move =>{
-            const moveOption = document.createElement('option');
-            moveOption.value = move.name;
-            moveOption.text = move.name;
-            mList2.add(moveOption);
-        })
+        fillList(mList2, data);
 
         const mList3 = document.getElementById("move3");
         clearList(mList3);
-        data.results.forEach(move =>{
-            const moveOption = document.createElement('option');
-            moveOption.value = move.name;
-            moveOption.text = move.name;
-            mList3.add(moveOption);
-        })
+        fillList(mList3, data);
 
         const mList4 = document.getElementById("move4");
         clearList(mList4);
-        data.results.forEach(move =>{
-            const moveOption = document.createElement('option');
-            moveOption.value = move.name;
-            moveOption.text = move.name;
-            mList4.add(moveOption);
-        })
+        fillList(mList4, data);
 
     }
     catch(error)
@@ -81,4 +62,14 @@ function clearList(selectElement){
     for(i = L; i >=0; i--){
         selectElement.remove(i);
     }
+}
+
+//Function to fill move lists
+function fillList(selectElement, data){
+    data.moves.forEach(move => {
+        const moveOption = document.createElement('option');
+        option.value = move.name;
+        option.text = move.name;
+        selectElement.add(option);
+    })
 }
