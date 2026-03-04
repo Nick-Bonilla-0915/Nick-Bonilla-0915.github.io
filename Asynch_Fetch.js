@@ -2,10 +2,10 @@ async function findPokemon(){
     try{
         //Taking name or ID then fetching data from api
         const pokeID = document.getElementById("inName").value.toLowerCase();
-        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeID}`)
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeID}`);
 
         //Checking if fetch is successful
-        if(!Response.ok)
+        if(!response.ok)
         {
             throw new Error("Pokemon Not Found");
         }
@@ -15,8 +15,13 @@ async function findPokemon(){
 
         //Updating Pokemon sprite
         const pokeSprite = data.sprites.front_default;
-        const spriteShow = document.getElementById("pokeImg");
-        spriteShow.src = pokeSprite;
+        const docID = document.getElementById("pokeImg");
+        docID.src = pokeSprite;
+
+        //Updating Pokemon cry
+        const pokeCry = data.cries.latest;
+        docID = document.getElementById("pokeCry");
+        docID.src = pokeCry;
     }
     catch(error)
     {
