@@ -20,10 +20,18 @@ async function findPokemon(){
         pokeSpriteDocID.src = pokeSprite;
 
         //Updating Pokemon cry
-        const pokeCry = data.cries.latest;
+        const pokeCries = data.cries.latest;
         const pokeCryDocID = document.getElementById("pokeCry");
-        pokeCryDocID.src = pokeCry;
-        pokeCryDocID.load();
+        pokeCryDocID.src = pokeCries;
+
+        //Updating Pokemon Moves
+        const mList1 = document.getElementById("move1");
+
+        const mList2 = document.getElementById("move2");
+
+        const mList3 = document.getElementById("move3");
+
+        const mList4 = document.getElementById("move4");
     }
     catch(error)
     {
