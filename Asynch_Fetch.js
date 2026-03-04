@@ -1,3 +1,4 @@
+//Function to fetch pokemon from API
 async function findPokemon(){
     try{
         //Taking name or ID then fetching data from api
@@ -27,10 +28,9 @@ async function findPokemon(){
     {
         console.error(error);
     }
-    
-        
 }
 
+//Function to add pokemon to team
 function addPokemon(){
     console.log("BBBBBB");
 }
